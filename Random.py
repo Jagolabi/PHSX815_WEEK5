@@ -66,7 +66,7 @@ if __name__ == "__main__":
     random = Random(seed)
 
     # create some random data
-    N = 10000
+    N = 50000
 
     # an array of random numbers from numpy
     x = np.random.rand(N)
@@ -77,13 +77,13 @@ if __name__ == "__main__":
         myx.append(random.rand())
 
     # create histogram of our data
-    n, bins, patches = plt.hist(myx, 50, density=True, facecolor='g', alpha=0.75)
+    n, bins, patches = plt.hist(myx, 50, density=True, facecolor='b', alpha=0.75)
 
     # plot formating options
     plt.xlabel('x')
     plt.ylabel('Probability')
     plt.title('Uniform random number')
-    plt.grid(True)
+    plt.grid(false)
 
     # show figure (program only ends once closed
     plt.show()
